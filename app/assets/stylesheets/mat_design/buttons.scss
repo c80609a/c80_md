@@ -1,0 +1,44 @@
+@mixin butbut($color:#ffffff, $bg_color:#3190e7) {
+  display: inline-block;
+  position: relative;
+
+  font-weight: bold;
+  font-size: 1.0em;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  line-height: 12px !important;
+  text-decoration: none;
+  text-shadow: none !important;
+  color: $color;
+
+  border: 1px solid $bg_color;
+  border-radius: 3px !important;
+  padding: 10px 15px !important;
+  margin: 0;
+  background: $bg_color !important;
+  box-shadow: none !important;
+
+  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+
+  &:hover {
+    background-color: darken($bg_color,10%) !important;
+    color: darken($color,10%);
+  }
+}
+
+#title_bar .action_items span.action_item > a,
+#title_bar .action_items span.action_item > .dropdown_menu > a {
+  @include butbut;
+}
+
+fieldset.actions input[type="submit"] {
+  @include butbut(#ffffff,#0cb863);
+}
+
+fieldset.actions li.cancel a {
+  @include butbut(#000000,#ffffff);
+  border: 1px solid #000000;
+}
