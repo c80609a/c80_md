@@ -1,0 +1,36 @@
+div#sidebar {
+  .sidebar_section {
+    background: #ffffff;
+    border: 2px solid #f1f1f1;
+    border-radius: 3px;
+    box-shadow: none;
+    > h3 {
+
+      background-color: #ffffff !important;
+      background-image: none !important;
+      border: 0 !important;
+      box-shadow: none !important;
+      text-shadow: none !important;
+
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 40px;
+      text-align: center;
+      color: #444444;
+
+      margin-bottom: 0.5em;
+      padding: 5px 10px 3px 10px;
+
+    }
+  }
+
+  form {
+    .filter_form_field {
+      select {display: none;}
+    }
+    input[type=text] {
+      margin-left: 0;
+      width: 86%;
+    }
+  }
+}

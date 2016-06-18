@@ -1,0 +1,22 @@
+div.title_bar {
+
+  background-color: #ffffff !important;
+  background-image: none !important;
+  text-shadow: none !important;
+  border: none !important;
+  box-shadow: none !important;
+
+  span.breadcrumb {
+    margin-top: 12px;
+    a {
+      color: #288feb !important;
+      font-weight: bold;
+    }
+  }
+
+  h2#page_title {
+    font-family: "Open Sans" !important;
+    font-weight: 300;
+    font-size: 34px;
+  }
+}

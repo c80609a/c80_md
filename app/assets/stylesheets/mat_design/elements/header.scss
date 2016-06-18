@@ -1,0 +1,36 @@
+#header {
+  background-color: #288feb !important;
+  background-image: none;
+  border-bottom: none !important;
+  box-shadow: none !important;
+  text-shadow: none !important;
+  display: table;
+  height: 60px;
+  width: 100%;
+  overflow: visible;
+  position: inherit;
+  padding: 5px 0;
+  z-index: 900;
+
+  ul.header-item.tabs {
+    li {
+      a {
+        font-weight: bold !important;
+        color: #ffffff !important;
+        font-size: 14px !important;
+        padding: 30px 10px;
+        border-radius: 0;
+        &:hover {
+          background-color: #237fd0 !important;
+        }
+      }
+
+      &.current {
+        background-color: #1b609e !important;
+        &:hover {
+          background-color: #1b609e !important;
+        }
+      }
+    }
+  }
+}

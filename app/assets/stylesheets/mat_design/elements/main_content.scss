@@ -1,0 +1,19 @@
+div#main_content {
+  > form > fieldset.inputs {
+    background: transparent !important;
+    border-radius: 0;
+    box-shadow: none !important;
+
+    > legend {
+      display: none;
+    }
+  }
+}
+
+form fieldset ol > li {
+  padding: 10px 0;
+}
+
+li legend > label, li > label { font-size:14px !important; }
+label > input[type=checkbox] { width: 14px; height: 14px;}
+

@@ -1,0 +1,52 @@
+table.index_table {
+  th {
+    background-color: #424C58 !important;
+    background-image: linear-gradient(180deg, #424C58, #424C58);
+    text-shadow: none !important;
+    border: 0 !important;
+    box-shadow: none !important;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 18px;
+    margin-bottom: 0.5em;
+    color: #ffffff;
+    padding: 15px;
+    text-align: center;
+
+    a {
+      color: #ffffff !important;
+    }
+
+    &.sorted-asc, &.sorted-desc {
+      background-color: #4f5c6a !important;
+      background-image: linear-gradient(180deg, #4f5c6a, #4f5c6a);
+      a {
+        color: #ffffff !important;
+      }
+    }
+
+    &:hover {
+      background-color: darken(#424C58, 20%) !important;
+    }
+
+  }
+  td {
+    &.col-selectable {
+      text-align: center;
+      input[type=checkbox] {
+        /*width: 15px;
+        height: 15px;*/
+      }
+    }
+  }
+
+  .col-actions {
+    width: 200px !important;
+  }
+
+  .col- {
+    width: 36px !important;
+    text-align: center;
+  }
+
+}

@@ -1,0 +1,99 @@
+@mixin but_fill($color: #ffffff, $bg_color: #3190e7) {
+  display: inline-block;
+  position: relative;
+
+  /*font-family: "Open Sans" !important;*/
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  text-decoration: none;
+  text-shadow: none;
+  color: $color;
+
+  border: 1px solid $bg_color;
+  border-radius: 3px;
+  padding: 10px 15px;
+  margin: 0;
+  background: $bg_color;
+  box-shadow: none;
+
+  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+
+  &:hover {
+    background-color: darken($bg_color, 10%) !important;
+    background-image: none !important;
+    color: lighten($color, 10%) !important;
+  }
+}
+
+@mixin but_frame($color: #424C58) {
+  @include but_fill($color, $color);
+
+  color: $color;
+  background: white;
+  &:hover {
+    background-color: $color !important;
+    color: white !important;
+  }
+}
+
+@mixin but_frame_small($color: #424c58) {
+  @include but_frame($color);
+
+  font-size: 13px !important;
+  line-height: 13px !important;
+  text-shadow: none !important;
+  border-radius: 3px !important;
+  padding: 7px 13px !important;
+/*background: $bg_color !important;*/
+  box-shadow: none !important;
+}
+
+/* index: кнопка "создать", справа вверху */
+#title_bar .action_items span.action_item > a,
+#title_bar .action_items span.action_item > .dropdown_menu > a {
+  @include but_fill(#ffffff, #28CB75);
+}
+
+/* edit: кнопка "update" формы редактирования */
+fieldset.actions input[type="submit"] {
+  @include but_fill(#ffffff, #0cb863);
+}
+
+/* edit: кнопка "отменить" формы редактирования */
+fieldset.actions li.cancel a {
+  @include but_fill(#000000, #ffffff);
+  border: 1px solid #000000;
+  font-size: 14px !important;
+  line-height: 16px !important;
+  text-shadow: none !important;
+  border-radius: 3px !important;
+  padding: 10px 15px !important;
+  background: white !important;
+  box-shadow: none !important;
+}
+
+/* index: кнопка "массовые операции" над таблицей */
+a.table_tools_button, .table_tools .dropdown_menu_button {
+  @include but_frame_small;
+}
+
+div#sidebar {
+  .sidebar_section {
+    form {
+      input[type=submit] {
+        @include but_frame_small(#288FEB);
+      }
+      a.clear_filters_btn {
+        @include but_frame_small(#969ca0);
+        width: 81px;
+        margin-left: 10px;
+        text-align: center;
+      }
+    }
+  }
+}

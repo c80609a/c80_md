@@ -1,3 +1,12 @@
+@import "elements/**/*";
+
+body *{
+  font-family: "Open Sans" !important;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+/* buttons: minor: добавим отступ между двумя кнопками */
 fieldset.actions li.cancel {
   margin-left: 10px;
 }
