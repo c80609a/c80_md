@@ -1,18 +1,23 @@
-@mixin inputfield($color:#444444, $bg_color:#ffffff) {
+@mixin inputfield($color:#444444, $bg_color:#ffffff, $border_color: #dfdfdf) {
+
   display: inline-block;
   position: relative;
 
-  font-weight: bold;
-  font-size: 14px !important;
-  line-height: 16px !important;
   text-decoration: none;
   text-shadow: none !important;
   color: $color;
 
-  border: 1px solid $bg_color;
+  border: 1px solid $border_color;
   border-radius: 3px !important;
-  padding: 10px 15px !important;
+
+  font-weight: bold;
+
+  font-size: 1.4rem !important;
+  height: 4.4rem !important;
+  padding: 1rem 1.4rem !important;
+
   margin: 0;
+
   background: $bg_color !important;
   box-shadow: none !important;
 
@@ -34,6 +39,16 @@
 
 input[type="text"] {
   @include inputfield;
+}
+
+select {
+  @include inputfield;
+}
+
+.bootstrap-select {
+  button {
+    @include inputfield;
+  }
 }
 
 form input[type=text] {

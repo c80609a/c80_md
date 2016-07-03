@@ -13,15 +13,16 @@
   z-index: 900;
 
   ul.header-item.tabs {
-    li {
-      a {
+    > li {
+      > a {
         font-weight: bold !important;
         color: #ffffff !important;
         font-size: 14px !important;
-        padding: 30px 10px;
+        padding: 22px 10px;
         border-radius: 0;
         &:hover {
           background-color: #237fd0 !important;
+          border-radius: 0 !important;
         }
       }
 
@@ -30,7 +31,64 @@
         &:hover {
           background-color: #1b609e !important;
         }
+        > a {
+          background-image: none !important;
+          background-color: #1b609e !important;
+        }
+      }
+
+      &.has_nested {
+        > a {
+          background: #288feb image_url('arrow_down.png') no-repeat calc(100% - 10px) 50% !important;
+          padding-right: 26px;
+          border-radius: 0 !important;
+          &:hover {
+            background-color: #2279c6 !important;
+            border-radius: 0 !important;
+          }
+        }
+        &.current > a {
+          background: #1e6cb1 image_url('arrow_down.png') no-repeat calc(100% - 10px) 50% !important;
+          padding-right: 26px;
+        }
+      }
+
+      ul {
+        background: white;
+        border-radius: 3px !important;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, .1);
+        position: absolute;
+        width: 120%;
+        min-width: 175px;
+        max-width: calc(100% + 20px);
+        margin-top: 18px;
+        float: left;
+        padding: 5px;
+        list-style: none;
+        z-index: 10010;
+        transition: transform .2s ease-in-out, opacity .2s ease-in-out, width .2s ease-in-out, height .2s ease-in-out;
+        border: 1px solid #ddd;
+
+        > li {
+          > a {
+            color: rgb(67, 68, 68) !important;
+            &:hover, &:focus, &:active {
+              background-color: rgb(242, 242, 242) !important;
+              border-radius: 0;
+            }
+          }
+
+          &.current {
+            > a {
+              color: rgb(41, 142, 234);
+              &:hover, &:focus, &:active {
+                color: rgb(41, 142, 234);
+              }
+            }
+          }
+        }
       }
     }
   }
+
 }

@@ -10,3 +10,20 @@ body *{
 fieldset.actions li.cancel {
   margin-left: 10px;
 }
+
+fieldset.inputs {
+
+  label.label {
+    color: #288feb;
+    height: 4.4rem !important;
+    display: inline-block;
+    padding: 1rem 1.4rem;
+    text-align: right;
+  }
+
+}
+
+.breadcrumb {
+  background-color: transparent !important;
+  padding-left: 0 !important;
+}
