@@ -1,6 +1,6 @@
 @import "elements/**/*";
 
-body *{
+body * {
   font-family: "Open Sans" !important;
   font-weight: 400;
   font-size: 14px;
@@ -9,4 +9,37 @@ body *{
 /* buttons: minor: добавим отступ между двумя кнопками */
 fieldset.actions li.cancel {
   margin-left: 10px;
+}
+
+fieldset.inputs {
+
+  label.label {
+    color: #288feb;
+    height: 4.4rem !important;
+    display: inline-block;
+    padding: 1rem 1.4rem;
+    text-align: right;
+  }
+
+}
+
+fieldset.choices {
+  legend.label {
+    border: none;
+
+    label {
+      color: #288feb;
+      height: 4.4rem !important;
+      display: inline-block;
+      padding: 0 1.4rem;
+      text-align: right;
+      position: relative;
+      font-weight: bold;
+    }
+  }
+}
+
+.breadcrumb {
+  background-color: transparent !important;
+  padding-left: 0 !important;
 }
