@@ -1,3 +1,5 @@
+//----[ mixins ]--------------------------------------------------------------------------------------------------------------------
+
 @mixin but_fill($color: #ffffff, $bg_color: #3190e7) {
   display: inline-block;
   position: relative;
@@ -12,7 +14,7 @@
 
   border: 1px solid $bg_color !important;
   border-radius: 3px !important;
-  padding: 10px 15px;
+  padding: 13px 15px;
   margin: 0;
   background: $bg_color;
   box-shadow: none;
@@ -48,11 +50,13 @@
   line-height: 16px !important;
   text-shadow: none !important;
   border-radius: 3px !important;
-  padding: 7px 13px !important;
+  padding: 13px 18px !important;
 /*background: $bg_color !important;*/
   box-shadow: none !important;
   background-image: none !important;
 }
+
+//----[ buttons ]--------------------------------------------------------------------------------------------------------------------
 
 /* index: кнопка "создать", справа вверху */
 #title_bar .action_items span.action_item > a,
@@ -68,12 +72,12 @@ fieldset.actions input[type="submit"] {
 /* edit: кнопка "отменить" формы редактирования */
 fieldset.actions li.cancel a {
   @include but_fill(#000000, #ffffff);
-  border: 1px solid #000000;
+  border: 1px solid #dddddd !important;
   font-size: 14px !important;
   line-height: 16px !important;
   text-shadow: none !important;
   border-radius: 3px !important;
-  padding: 10px 15px !important;
+  padding: 13px 15px !important;
   background: white !important;
   box-shadow: none !important;
 }
@@ -83,6 +87,7 @@ a.table_tools_button, .table_tools .dropdown_menu_button {
   @include but_frame_small;
 }
 
+/*кнопки панели фильтрации*/
 div#sidebar {
   .sidebar_section {
     form {
@@ -91,9 +96,10 @@ div#sidebar {
       }
       a.clear_filters_btn {
         @include but_frame_small(#969ca0);
-        width: 81px;
+        width: 93px;
         margin-left: 10px;
         text-align: center;
+        padding: 13px 12px !important;
       }
     }
   }
