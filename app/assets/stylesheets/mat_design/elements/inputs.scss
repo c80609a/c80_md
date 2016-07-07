@@ -1,4 +1,4 @@
-@mixin inputfield($color:#444444, $bg_color:#ffffff, $border_color: #dfdfdf) {
+@mixin inputfield($color: #444444, $bg_color: #ffffff, $border_color: #dfdfdf) {
 
   display: inline-block;
   position: relative;
@@ -53,4 +53,20 @@ select {
 
 form input[type=text] {
   width: calc(80% - 32px);
+}
+
+div#sidebar {
+  form {
+    input[type=text] {
+      margin-left: 0;
+      width: 100% !important;
+
+      &.datepicker {
+        background: #fff url(/assets/active_admin/datepicker/datepicker-input-icon-d9c2bb73769af777c8a71720d29741f3a499aebd5a043e9a119bd0d9597aed47.png) no-repeat 100% 14px !important;
+        padding-right: 18px !important;
+        padding-left: 7px !important;
+        width: 108px !important;
+      }
+    }
+  }
 }

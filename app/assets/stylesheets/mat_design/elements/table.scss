@@ -11,10 +11,13 @@ table.index_table {
     margin-bottom: 0.5em;
     color: #ffffff;
     padding: 15px;
-    text-align: center;
+    text-align: left;
 
     a {
       color: #ffffff !important;
+      font-size: 13px !important;
+      font-weight: 600 !important;
+      line-height: 18px;
     }
 
     &.sorted-asc, &.sorted-desc {
@@ -29,6 +32,10 @@ table.index_table {
       background-color: darken(#424C58, 20%) !important;
     }
 
+    &.sortable a {
+      background-image: url(image_path('orderable2.png')) !important;
+    }
+
   }
   td {
     &.col-selectable {
@@ -40,13 +47,26 @@ table.index_table {
     }
   }
 
-  .col-actions {
-    width: 200px !important;
+  /* столбец с чекбоксом */
+  .col-selectable {
+    width: 36px !important;
+    text-align: left;
   }
 
   .col- {
     width: 36px !important;
-    text-align: center;
+    text-align: left;
+  }
+
+  /* столбец ID */
+  .col-id {
+    width: 36px !important;
+    text-align: left;
+  }
+
+  /* столбец с кнопками add\delete\view */
+  .col-actions {
+    width: 200px !important;
   }
 
 }
