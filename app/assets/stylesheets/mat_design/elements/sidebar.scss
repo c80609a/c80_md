@@ -30,13 +30,21 @@ div#sidebar {
     }
     input[type=text] {
       margin-left: 0;
-      width: 86%;
+      width: 100%;
+
+      &.datepicker {
+        background: #fff url(/assets/active_admin/datepicker/datepicker-input-icon-d9c2bb73769af777c8a71720d29741f3a499aebd5a043e9a119bd0d9597aed47.png) no-repeat 100% 14px !important;
+        padding-right: 18px !important;
+        padding-left: 7px !important;
+        width: 108px !important;
+      }
     }
   }
 
   label.label {
     color: #288feb !important;
     text-align: left !important;
+    padding-left: 0 !important;
   }
 
 }
