@@ -43,3 +43,8 @@ fieldset.choices {
   background-color: transparent !important;
   padding-left: 0 !important;
 }
+
+ol.choices-group {
+  z-index: 1 !important;
+  position: relative !important;
+}
