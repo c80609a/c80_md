@@ -37,8 +37,16 @@
   }
 }
 
-input[type="text"] {
-  @include inputfield;
+body.index {
+  div#sidebar {
+    input[type="text"] {
+      @include inputfield;
+    }
+  }
+}
+
+body.edit, body.new {
+
 }
 
 select {
