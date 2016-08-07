@@ -35,6 +35,10 @@
   &:focus {
     border-color: #298eea !important;
   }
+
+  &.highl {
+    background-color: rgba(255, 200, 127, 0.26) !important;
+  }
 }
 
 body.index {
@@ -46,7 +50,11 @@ body.index {
 }
 
 body.edit, body.new {
-
+  div#main_content {
+    input[type="text"] {
+      @include inputfield;
+    }
+  }
 }
 
 select {
@@ -61,4 +69,5 @@ select {
 
 form input[type=text] {
   width: calc(80% - 32px);
+  /*padding: 10px 10px 10px 10px;*/
 }
