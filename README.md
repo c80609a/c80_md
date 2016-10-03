@@ -22,7 +22,17 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Host app:
+```
+  
+  gem 'bootstrap-select-rails'
+
+  @import "font-awesome";
+  @import "bootstrap";
+  @import "bootstrap-select";
+  @import "mat_design";
+
+```
 
 ## Development
 
