@@ -51,7 +51,14 @@ body.index {
 
 body.edit, body.new {
   div#main_content {
-    input[type="text"] {
+    form input[type=text],
+    form input[type=password],
+    form input[type=email],
+    form input[type=number],
+    form input[type=url],
+    form input[type=tel],
+    form input[type=date],
+    form textarea {
       @include inputfield;
     }
   }
