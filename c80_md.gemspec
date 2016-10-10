@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = %q{nope}
   spec.description   = %q{too much}
-  spec.homepage      = "http://kyrandia.com"
+  spec.homepage      = "https://github.com/c80609a/c80_md"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org by setting 'allowed_push_host', or
