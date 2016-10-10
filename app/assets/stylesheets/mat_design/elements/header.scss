@@ -13,7 +13,13 @@
   z-index: 900;
 
   ul.header-item.tabs {
+
     > li {
+
+      ul {
+          border-radius: 0 !important;
+      }
+
       > a {
         font-weight: bold !important;
         color: #ffffff !important;

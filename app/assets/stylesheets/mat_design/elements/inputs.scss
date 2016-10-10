@@ -1,24 +1,24 @@
-@mixin inputfield($color: #444444, $bg_color: #ffffff, $border_color: #dfdfdf) {
+@mixin tex_input_element($color: #444444, $bg_color: #ffffff, $border_color: #dfdfdf) {
+
+  color: $color;
+  background: $bg_color !important;
+  border: 1px solid $border_color;
 
   display: inline-block;
   position: relative;
 
   text-decoration: none;
   text-shadow: none !important;
-  color: $color;
 
-  border: 1px solid $border_color;
   border-radius: 3px !important;
 
   font-weight: bold;
 
   font-size: 1.4rem !important;
-  height: 4.4rem !important;
   padding: 1rem 1.4rem !important;
 
   margin: 0;
 
-  background: $bg_color !important;
   box-shadow: none !important;
 
   transition: all 0.2s ease-in-out;
@@ -39,38 +39,53 @@
   &.highl {
     background-color: rgba(255, 200, 127, 0.26) !important;
   }
+
+}
+
+@mixin tex_input_element_inputfield($color: #444444, $bg_color: #ffffff, $border_color: #dfdfdf) {
+  @include tex_input_element($color, $bg_color, $border_color);
+  height: 4.4rem !important;
+}
+
+@mixin tex_input_element_textarea($color: #444444, $bg_color: #ffffff, $border_color: #dfdfdf) {
+  @include tex_input_element($color, $bg_color, $border_color);
 }
 
 body.index {
   div#sidebar {
     input[type="text"] {
-      @include inputfield;
+      @include tex_input_element_inputfield;
     }
   }
 }
 
 body.edit, body.new {
   div#main_content {
+
     form input[type=text],
     form input[type=password],
     form input[type=email],
     form input[type=number],
     form input[type=url],
     form input[type=tel],
-    form input[type=date],
-    form textarea {
-      @include inputfield;
+    form input[type=date] {
+      @include tex_input_element_inputfield;
     }
+
+    form textarea {
+      @include tex_input_element_textarea;
+    }
+
   }
 }
 
 select {
-  @include inputfield;
+  @include tex_input_element_inputfield;
 }
 
 .bootstrap-select {
   button {
-    @include inputfield;
+    @include tex_input_element_inputfield;
   }
 }
 
