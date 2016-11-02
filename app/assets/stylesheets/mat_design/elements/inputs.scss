@@ -40,6 +40,8 @@
     background-color: rgba(255, 200, 127, 0.26) !important;
   }
 
+  width: calc(80% - 32px);
+
 }
 
 @mixin tex_input_element_inputfield($color: #444444, $bg_color: #ffffff, $border_color: #dfdfdf) {
@@ -62,15 +64,13 @@ body.index {
 body.edit, body.new {
   div#main_content {
 
-    form input[type=text],
-    form input[type=password],
-    form input[type=email],
-    form input[type=number],
-    form input[type=url],
-    form input[type=tel],
-    form input[type=date] {
-      @include tex_input_element_inputfield;
-    }
+    form input[type=text] { @include tex_input_element_inputfield; }
+    form input[type=password] { @include tex_input_element_inputfield; }
+    form input[type=email] { @include tex_input_element_inputfield; }
+    form input[type=number] { @include tex_input_element_inputfield; }
+    form input[type=url] { @include tex_input_element_inputfield; }
+    form input[type=tel] { @include tex_input_element_inputfield; }
+    form input[type=date] { @include tex_input_element_inputfield; }
 
     form textarea {
       @include tex_input_element_textarea;
@@ -86,10 +86,10 @@ select {
 .bootstrap-select {
   button {
     @include tex_input_element_inputfield;
-  }
-}
 
-form input[type=text] {
-  width: calc(80% - 32px);
-  /*padding: 10px 10px 10px 10px;*/
+    span.filter-option {
+      font-weight: bold;
+    }
+
+  }
 }
