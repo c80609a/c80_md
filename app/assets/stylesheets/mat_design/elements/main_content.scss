@@ -7,7 +7,22 @@ div#main_content {
       box-shadow: none !important;
 
       > legend {
-        display: none;
+        /*display: none;*/
+
+        span {
+          display: block;
+          background-color: rgba(239, 239, 239, 0.71);
+          background-image: none !important;
+          text-shadow: #fff 0 1px 0;
+          border: none;
+          box-shadow: none;
+          font-size: 1em;
+          font-weight: bold;
+          line-height: 25px;
+          margin-bottom: 0;
+          color: #5E6469;
+          padding: 5px 10px 3px 25px;
+        }
       }
     }
   }
@@ -15,9 +30,15 @@ div#main_content {
 
 form fieldset ol > li {
   padding: 10px 0;
+
+  &.boolean { clear: both; }
+  &.text { clear: both; }
+  &.ckeditor { clear: both; }
+  &.select { clear: both; }
+  &.string { clear: both; }
 }
 
-li legend > label, li > label {
+label.label {
   font-size: 14px !important;
 }
 
