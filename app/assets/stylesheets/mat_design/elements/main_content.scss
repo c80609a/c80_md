@@ -36,6 +36,14 @@ form fieldset ol > li {
   &.ckeditor { clear: both; }
   &.select { clear: both; }
   &.string { clear: both; }
+
+  p.inline-hints {
+    font-size: 0.85em;
+    font-style: normal;
+    color: rgba(102, 102, 102, 0.64);
+    margin: 0.5em 0 0 20%;
+  }
+
 }
 
 label.label {
