@@ -1,16 +1,20 @@
 
-/* line 12, /home/scout/git/bitbucket/101km/vendor/bundle/ruby/2.1.0/gems/activeadmin-1.0.0.pre2/app/assets/stylesheets/active_admin/mixins/_buttons.scss */
-a.table_tools_button.disabled, .table_tools .dropdown_menu_button.disabled {
+a.table_tools_button.disabled,
+.table_tools .dropdown_menu_button.disabled {
   opacity: 0.5;
   cursor: default;
 }
-/* line 50, /home/scout/git/bitbucket/101km/vendor/bundle/ruby/2.1.0/gems/activeadmin-1.0.0.pre2/app/assets/stylesheets/active_admin/mixins/_buttons.scss */
-a.table_tools_button:not(.disabled):hover, .table_tools .dropdown_menu_button:not(.disabled):hover {
+
+//noinspection CssOptimizeSimilarProperties
+a.table_tools_button:not(.disabled):hover,
+.table_tools .dropdown_menu_button:not(.disabled):hover {
   background-color: #FFFFFF;
   background-image: linear-gradient(180deg, #FFFFFF, #F1F1F1);
 }
-/* line 54, /home/scout/git/bitbucket/101km/vendor/bundle/ruby/2.1.0/gems/activeadmin-1.0.0.pre2/app/assets/stylesheets/active_admin/mixins/_buttons.scss */
-a.table_tools_button:not(.disabled):active, .table_tools .dropdown_menu_button:not(.disabled):active {
+
+//noinspection ALL
+a.table_tools_button:not(.disabled):active,
+.table_tools .dropdown_menu_button:not(.disabled):active {
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.22) inset, 0 1px 0 0px #EEE;
   border-color: #b9b9b9;
   border-top-color: #c2c2c2;
@@ -20,13 +24,17 @@ a.table_tools_button:not(.disabled):active, .table_tools .dropdown_menu_button:n
   background-color: #F3F3F3;
   background-image: linear-gradient(180deg, #F3F3F3, #D8D8D8);
 }
-/* line 19, /home/scout/git/bitbucket/101km/vendor/bundle/ruby/2.1.0/gems/activeadmin-1.0.0.pre2/app/assets/stylesheets/active_admin/components/_table_tools.scss */
-a.table_tools_button:not(.disabled):hover, .table_tools .dropdown_menu_button:not(.disabled):hover {
+
+//noinspection CssOptimizeSimilarProperties
+a.table_tools_button:not(.disabled):hover,
+.table_tools .dropdown_menu_button:not(.disabled):hover {
   background-color: #FFFFFF;
   background-image: linear-gradient(180deg, #FFFFFF, #F6F6F6);
 }
-/* line 23, /home/scout/git/bitbucket/101km/vendor/bundle/ruby/2.1.0/gems/activeadmin-1.0.0.pre2/app/assets/stylesheets/active_admin/components/_table_tools.scss */
-a.table_tools_button:not(.disabled):active, .table_tools .dropdown_menu_button:not(.disabled):active {
+
+//noinspection ALL
+a.table_tools_button:not(.disabled):active,
+.table_tools .dropdown_menu_button:not(.disabled):active {
   border-color: #c8c8c8;
   border-top-color: #d7d7d7;
   border-right-color: #c8c8c8;

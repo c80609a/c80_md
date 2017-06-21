@@ -1,0 +1,17 @@
+/*Кнопка "Групповые операции"*/
+
+div.table_tools {
+  div.batch_actions_selector {
+    a {
+
+      &.dropdown_menu_button {
+        padding-right:25px !important;
+      }
+
+      &.disabled {
+
+      }
+
+    }
+  }
+}

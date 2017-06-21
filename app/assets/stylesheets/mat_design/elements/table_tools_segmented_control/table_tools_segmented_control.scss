@@ -1,0 +1,20 @@
+/*===[ СТИЛИ ДЛЯ КНОПОК: 'Сетка', 'Таблица' ]======================================================================== */
+
+//noinspection CssOptimizeSimilarProperties
+.table_tools_segmented_control {
+  li {
+
+    float: right;
+
+    a {
+      margin-left: 5px;
+    }
+
+    &.selected {
+      a {
+        background-color: #d0d0d0 !important;
+      }
+    }
+
+  }
+}
