@@ -11,6 +11,12 @@ fieldset.actions li.cancel {
   margin-left: 10px;
 }
 
+/* форма редактирования/создания: добавим небольшой
+отступ снизу у этого поля ввода, иначе прыгает вёрстка */
+li.file {
+  margin-bottom: 10px !important;
+}
+
 fieldset.inputs {
 
   label.label {
@@ -35,6 +41,7 @@ fieldset.choices {
       text-align: right;
       position: relative;
       font-weight: bold;
+      font-size: 14px;
     }
   }
 }
