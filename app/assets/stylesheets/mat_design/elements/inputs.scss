@@ -57,6 +57,7 @@ body.index {
   div#sidebar {
     input[type="text"] {
       @include tex_input_element_inputfield;
+      width: calc(100% - 5px);
     }
   }
 }
